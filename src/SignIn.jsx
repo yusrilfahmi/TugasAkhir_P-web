@@ -11,7 +11,7 @@ function SignIn(){
                 <li id='SignIn'>
                 <button >SIGN IN</button>
                 </li>
-                <li id='SignUp'>
+                <li id='SignUpa'>
                 <button >SIGN UP</button>
                 </li>
             </ul>
