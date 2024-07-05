@@ -1,20 +1,20 @@
 import { useNavigate } from 'react-router-dom';
-import './SignIn.css'
+import './SignUp.css'
 import logo from './assets/logo.png';
 import { FaUser, FaLock } from "react-icons/fa";
 
-function SignIn(){
-    const navigate = useNavigate()
+function SignUp(){
+    const navigatee = useNavigate()
     return(
         <div className='wrapper'>
         <img src={logo} alt="Logo" />
         
             <ul>
-                <li id='SignIn'>
-                <button >SIGN IN</button>
+                <li id='SignInn'>
+                <button onClick={() => navigatee('/SignIn')}>SIGN IN</button>
                 </li>
-                <li id='SignUpp'>
-                <button onClick={() => navigate('/SignUp')}>SIGN UP</button>
+                <li id='SignUp'>
+                <button >SIGN UP</button>
                 </li>
             </ul>
 
@@ -27,9 +27,9 @@ function SignIn(){
                 <FaLock className='icon'/>
             </div>
 
-            <button>SIGN IN</button>
+            <button>SIGN UP</button>
         </div>
     )
 }
 
-export default SignIn
+export default SignUp
