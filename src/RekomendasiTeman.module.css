@@ -3,18 +3,20 @@
 }
 
 
-.wrapper li {
+.wrapper .tutup {
     list-style: none;
     padding-right: 20px;
 }
 
-.wrapper ul {
+.wrapper .close {
     display: flex;
+    list-style: none;
     margin-left: 20px;
     padding-top: 15px;
 }
 
-.wrapper ul li button {
+/* close */
+.wrapper .close li button {
     background-color: transparent;
     color: white;
     font-size: larger;
@@ -46,6 +48,7 @@
     border: 1px solid wheat;
 }
 
+/* Search */
 .inputBox {
     position: relative;
     width: 100%;
@@ -54,6 +57,7 @@
     margin-top: 40px;
 }
 
+/* Search */
 .inputBox input {
     display: block;
     margin-left: auto;
@@ -68,6 +72,7 @@
     color: white;
 }
 
+/* Search */
 .inputBox input::placeholder {
     padding-left: 20%;
 }
@@ -87,10 +92,44 @@
     border-radius: 30px;
     height: 20%;
     width: 50%;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.follow ul {
+    list-style: none;
+    padding-left: 15px;
+    margin-top: 15px;
+    display: flex;
+}
+
+.follow ul li ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.follow ul li ul li {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
 }
 
 .img {
     width: 90px;
     height: 15vh;
     border-radius: 50%;
+}
+
+.btnFollow {
+    border: 1px solid gray;
+    background-color: gray;
+    border-radius: 40px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-size: large;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
 }

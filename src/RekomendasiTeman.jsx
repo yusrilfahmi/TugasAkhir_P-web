@@ -7,11 +7,8 @@ function RekomendasiTeman() {
     return (
         <div className={RekomendasiTemanCSS.wrapper}>
             <ul className={RekomendasiTemanCSS.close}>
-
-                <li>
-                    <button><h2>X</h2></button>
-                </li>
-                <li><h2>Rekomendasi Daftar Teman</h2></li>
+                <li className={RekomendasiTemanCSS.tutup}><button><h2>X</h2></button></li>
+                <li><h2>Rekomendasi Tambah Teman</h2></li>
             </ul>
 
             <div className={RekomendasiTemanCSS.inputBox}>
@@ -28,7 +25,7 @@ function RekomendasiTeman() {
                         <li>Username</li>
                     </ul>
                     </li>
-                    <li><button>Follow</button></li>
+                    <li><button className={RekomendasiTemanCSS.btnFollow}>Follow</button></li>
                 </ul>
             </div>
 
