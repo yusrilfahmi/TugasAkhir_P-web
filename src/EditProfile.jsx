@@ -4,16 +4,18 @@ import logo from './assets/gray.png';
 import { FaUser, FaLock, FaCamera } from "react-icons/fa";
 
 function EditProfile() {
+    const navigate = useNavigate()
     return (
         <div className={EditProfileCSS.wrapper}>
             <ul className={EditProfileCSS.close}>
-                <FaCamera className={EditProfileCSS.icon} />
+
                 <li>
-                    <button><h2>X</h2></button>
+                    <button onClick={() => navigate('/SignUp')}><h2>X</h2></button>
                 </li>
                 <li><h2>Edit Profile</h2></li>
             </ul>
             <img src={logo} alt="Logo" className={EditProfileCSS.img} />
+            <FaCamera className={EditProfileCSS.icon} />
             <h3>Nama</h3>
             <div className={EditProfileCSS.inputBox}>
                 <input type='nama' ></input>
