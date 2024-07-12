@@ -26,18 +26,18 @@ function EditProfile() {
             </div>
             <h3>Lokasi</h3>
             <div className={EditProfileCSS.inputBox}>
-                <input type='ttl'></input>
+                <input type='lokasi'></input>
             </div>
             <h3>Pekerjaan</h3>
             <div className={EditProfileCSS.inputBox}>
-                <input type='ttl'></input>
+                <input type='pekerjaan'></input>
             </div>
             <h3>Hobi</h3>
             <div className={EditProfileCSS.inputBox}>
-                <input type='ttl'></input>
+                <input type='hobi'></input>
             </div>
 
-            <button className={EditProfileCSS.btn}>Simpan</button>
+            <button className={EditProfileCSS.btn} onClick={() => navigate('/RekomendasiTeman')} >Simpan</button>
         </div>
     )
 }

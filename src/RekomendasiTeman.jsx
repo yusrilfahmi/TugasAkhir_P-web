@@ -2,8 +2,22 @@ import { useNavigate } from 'react-router-dom';
 import RekomendasiTemanCSS from './RekomendasiTeman.module.css'
 import logo from './assets/gray.png';
 import { FaUser, FaLock, FaCamera, FaSearch } from "react-icons/fa";
+import { useState } from 'react';
 
 function RekomendasiTeman() {
+
+    const [bgColor, setBgColor] = useState("white") //follow
+    const [colorName, setColorName] = useState("black") //follow
+    const [btnName, setBtnName] = useState("Follow")
+    const [btnConfirm, setBtnConfirm] = useState("Skip")
+
+    const handleButtonOnClick = () => {
+        setBgColor("gray")
+        setColorName("white")
+        setBtnName("Following")
+        setBtnConfirm("Done")
+    }
+
     return (
         <div className={RekomendasiTemanCSS.wrapper}>
             <ul className={RekomendasiTemanCSS.close}>
@@ -25,12 +39,12 @@ function RekomendasiTeman() {
                         <li>Username</li>
                     </ul>
                     </li>
-                    <li><button className={RekomendasiTemanCSS.btnFollow}>Follow</button></li>
+                    <li><button style={{backgroundColor: bgColor, color: colorName}} className={RekomendasiTemanCSS.btnFollow} onClick={handleButtonOnClick}>{btnName}</button></li>
                 </ul>
             </div>
 
 
-            <button className={RekomendasiTemanCSS.btn}>Skip</button>
+            <button className={RekomendasiTemanCSS.btn}>{btnConfirm}</button>
         </div>
     )
 }

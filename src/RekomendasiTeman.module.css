@@ -45,7 +45,7 @@
     color: rgb(0, 174, 255);
     cursor: pointer;
     font-weight: bold;
-    border: 1px solid wheat;
+    border: 1px;
 }
 
 /* Search */
@@ -98,8 +98,8 @@
 
 .follow ul {
     list-style: none;
-    padding-left: 15px;
-    margin-top: 15px;
+    padding-left: 11px;
+    margin-top: 13px;
     display: flex;
 }
 
@@ -117,19 +117,19 @@
 
 .img {
     width: 90px;
-    height: 15vh;
+    height: 90px;
     border-radius: 50%;
 }
 
 .btnFollow {
-    border: 1px solid gray;
+    border: 2px;
     background-color: gray;
     border-radius: 40px;
     height: 40px;
-    width: 100px;
-    color: white;
+    width: 110px;
     font-size: large;
     margin-top: 20px;
     margin-left: 10px;
     cursor: pointer;
+    font-weight: bold;
 }
