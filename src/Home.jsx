@@ -5,20 +5,10 @@ import logo from './assets/logo.png';
 import pp from './assets/pp.jpg';
 import foto from './assets/pp.jpg';
 import { LuImagePlus } from 'react-icons/lu';
-import { useState } from 'react';
+import ListTambahTemanHome from './ListTambahTemanHome.jsx';
 
 
 function Home(){
-
-    const [bgColor, setBgColor] = useState("white") //follow
-    const [colorName, setColorName] = useState("black") //follow
-    const [btnName, setBtnName] = useState("Follow")
-
-    const handleButtonOnClick = () => {
-        setBgColor("gray")
-        setColorName("white")
-        setBtnName("Following")
-    }
 
     return(
         
@@ -33,7 +23,6 @@ function Home(){
                 </button>
             </div>
             <div className ={HomeCSS.kiri}>
-               
                 <img src={logo} alt="Logo"/> 
                 
             </div>
@@ -45,20 +34,26 @@ function Home(){
                 </div>
                 <div className={HomeCSS.h}>
                     <h1 className={HomeCSS.rekomendasiTeman}>Rekomendasi Teman</h1>
-                    <ul className={HomeCSS.listRekomendasiTeman}>
-                        <li>
-                        <img src={pp} alt='pp' className={HomeCSS.imgRekomendasiTeman}></img>
-                        </li>
+                    
+                    {/* Rekomendasi Teman */}
 
-                        <li>
-                            <ul>
-                        <li>Nama</li>
-                        <li>Username</li>
-                            </ul>
-                        </li>
+                    <ListTambahTemanHome trigger={true}>
 
-                        <li><button style={{backgroundColor: bgColor, color: colorName}} className={HomeCSS.btnFollow} onClick={handleButtonOnClick}>{btnName}</button></li>
-                    </ul>  
+                    </ListTambahTemanHome>
+
+                    <ListTambahTemanHome trigger={true}>
+
+                    </ListTambahTemanHome>
+
+                    <ListTambahTemanHome trigger={true}>
+
+                    </ListTambahTemanHome>
+
+                    <ListTambahTemanHome trigger={true}>
+
+                    </ListTambahTemanHome>
+
+                    <button className={HomeCSS.showMoreRekomendasiTeman}>Show More</button>  
                 </div>
             </div>
             <div className={HomeCSS.tengah}>

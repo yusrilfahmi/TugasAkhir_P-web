@@ -1,0 +1,19 @@
+
+.Coba {
+    text-align: center;
+    padding: 20px;
+    background-color: aliceblue;
+    height: 100%;
+    width: 100%;
+
+  }
+  
+  .openpopupbutton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
