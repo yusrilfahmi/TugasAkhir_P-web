@@ -3,6 +3,8 @@ import EditProfile from "./EditProfile"
 import RekomendasiTeman from "./RekomendasiTeman"
 import SignIn from "./SignIn"
 import SignUp from "./SignUp"
+import Home from "./Home"
+import Postingan from "./Postingan"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 // import Mood from "./Mood"
 
@@ -18,6 +20,8 @@ function App() {
           <Route path='/SignUp' element={<SignUp />}></Route>
           <Route path='/EditProfile' element={<EditProfile />}></Route>
           <Route path='/RekomendasiTeman' element={<RekomendasiTeman />}></Route>
+          <Route path='/Home' element={<Home />}></Route>
+          <Route path='/Postingan' element={<Postingan />}></Route>
         </Routes>
       </Router>
 
