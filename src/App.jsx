@@ -5,15 +5,22 @@ import SignIn from "./SignIn"
 import SignUp from "./SignUp"
 import Home from "./Home"
 import Postingan from "./Postingan"
+import Popup from './TestingPopUp'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-// import Mood from "./Mood"
+import TestingPopUp from "./TestingPopUp"
+import ListRekomendasiTeman from './ListRekomendasiTeman'
+import Post from './Post'
+import StatusPopup from "./StatusPopup"
+import Status from "./Status"
+import CobaButton from "./CobaButton"
+
 
 function App() {
 
   return (
     <>
 
-      <Router>
+      {/* <Router>
         <Routes>
           <Route path='/' element={<SignIn />}></Route>
           <Route path='/SignIn' element={<SignIn />}></Route>
@@ -23,7 +30,9 @@ function App() {
           <Route path='/Home' element={<Home />}></Route>
           <Route path='/Postingan' element={<Postingan />}></Route>
         </Routes>
-      </Router>
+      </Router> */}
+
+        <CobaButton/>
 
     </>
 
