@@ -13,6 +13,7 @@ import Post from './Post'
 import StatusPopup from "./StatusPopup"
 import Status from "./Status"
 import CobaButton from "./CobaButton"
+import ProfileSide from "./ProfileSide"
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
   return (
     <>
 
-      {/* <Router>
+      <Router>
         <Routes>
           <Route path='/' element={<SignIn />}></Route>
           <Route path='/SignIn' element={<SignIn />}></Route>
@@ -30,9 +31,9 @@ function App() {
           <Route path='/Home' element={<Home />}></Route>
           <Route path='/Postingan' element={<Postingan />}></Route>
         </Routes>
-      </Router> */}
-
-        <CobaButton/>
+      </Router>
+{/* 
+        <Home/> */}
 
     </>
 
