@@ -7,8 +7,19 @@ import foto from './assets/pp.jpg';
 import { LuImagePlus } from 'react-icons/lu';
 import ListTambahTemanHome from './ListTambahTemanHome.jsx';
 import ProfileSide from './ProfileSide.jsx';
+import StatusPopup from './StatusPopup';
+import { useState } from 'react';
 
 function Home(){
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
 
     return(
         
@@ -65,10 +76,14 @@ function Home(){
                 <div className={HomeCSS.contentatas}>
                     <img src={foto} alt="foto" className={HomeCSS.fotouser}/>
                     <input type="text" placeholder ='Ada Apa Hari Ini?' className={HomeCSS.inputtext}/>
-                    <button className={HomeCSS.Photobtn}>
+                    <button className={HomeCSS.Photobtn} onClick={openPopup}>
                         <LuImagePlus className={HomeCSS.icon}></LuImagePlus>
                         Photo                       
                     </button>
+                    <StatusPopup
+        isOpen={isPopupOpen}
+        onClose={closePopup}
+      />
                     <button className={HomeCSS.Postingbtn}>
                         Posting                     
                     </button>
