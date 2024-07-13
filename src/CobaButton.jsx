@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import StatusPopup from './StatusPopup';
 import CobaButtonCSS from'./CobaButton.module.css';
+import StatusPopup from './StatusPopup';
 
 function CobaButton() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
