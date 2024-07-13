@@ -55,6 +55,7 @@ body {
     border: none;
     outline: none;
     border-radius: 30px;
+    padding-left: 20px;
 }
 
 .input-box input::placeholder {

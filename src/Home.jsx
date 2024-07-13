@@ -6,7 +6,7 @@ import pp from './assets/pp.jpg';
 import foto from './assets/pp.jpg';
 import { LuImagePlus } from 'react-icons/lu';
 import ListTambahTemanHome from './ListTambahTemanHome.jsx';
-
+import ProfileSide from './ProfileSide.jsx';
 
 function Home(){
 
@@ -30,7 +30,12 @@ function Home(){
 
         <div className ={HomeCSS.home}>
             <div className={HomeCSS.kiri}>
-                <div className={HomeCSS.profile}>  
+                <div className={HomeCSS.profile}>
+
+                    <ProfileSide>
+
+                    </ProfileSide>
+
                 </div>
                 <div className={HomeCSS.h}>
                     <h1 className={HomeCSS.rekomendasiTeman}>Rekomendasi Teman</h1>

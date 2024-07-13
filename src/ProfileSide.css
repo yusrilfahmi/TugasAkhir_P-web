@@ -1,0 +1,84 @@
+.profile-card {
+    /* background-color: #1c1e21; */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-bottom: 10px;
+}
+
+.username {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.handle {
+  color: #bbb;
+  margin-bottom: 30px;
+  font-size: 0.8em;
+}
+
+.bio {
+  margin-bottom: 20px;
+  font-size: 0.8em;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  font-size: 0.8em;
+  padding: 10px 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: 40px;
+}
+
+.follow > div {
+  /* flex: 1; */
+  text-align: center;
+  /* padding: 0 10px; */
+  font-weight: bold;
+}
+
+.follow-value {
+  font-weight: bold;
+}
+
+.garis-tengah {
+  border-left: 1px solid #bbb;
+  height: 40px;
+  /* align-self: center; */
+}
+
+.follow-label {
+  color: #bbb;
+}
+
+.profile-btn button {
+  background-color: hsl(211, 100%, 50%, 0%);
+  color: #61aeff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  padding-top: 170px;
+}
