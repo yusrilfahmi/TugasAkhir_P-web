@@ -7,7 +7,6 @@ import { useEffect, useState } from 'react';
 function SignIn() {
     const navigate = useNavigate()
 
-
     return (
         <div className='wrapper'>
             <img src={logo} alt="Logo" />
@@ -21,9 +20,10 @@ function SignIn() {
                 </li>
             </ul>
 
+        
             <div className='input-box'>
                 <input
-                type='usernamne'
+                type='username'
                 placeholder='Username'
                 ></input>
                 <FaUser className='icon' />
@@ -35,8 +35,10 @@ function SignIn() {
                 <FaLock className='icon' />
             </div>
 
-            <button onClick={() => navigate('/Home')} >SIGN IN</button>
-            <p style={{display: 'flex', justifyContent: 'space-around', paddingTop:'10px'}}>Silahkan Login</p>
+            <button type='submit' onClick={() => navigate('/Home')} >SIGN IN</button>
+            <p style={{display: 'flex', justifyContent: 'space-around', paddingTop:'10px'}}>Tes <span></span></p>
+            
+
         </div>
     )
 }
