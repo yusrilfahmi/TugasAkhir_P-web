@@ -5,7 +5,7 @@
     border-radius: 10px;
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
     text-align: center;
-    width: 300px;
+    width: auto;
     margin: 0 auto;
     padding-top: 30px;
 }
@@ -16,25 +16,30 @@
   align-items: center;
 }
 
-.avatar {
+.foto {
+  object-fit: cover;
+  height: 65px;
+  width: 65px;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 3px solid white;
   margin-bottom: 10px;
+  z-index: 5;
 }
 
 .username {
+  font-size: medium;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .handle {
   color: #bbb;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   font-size: 0.8em;
 }
 
 .bio {
-  margin-bottom: 20px;
+  margin-bottom: 3px;
   font-size: 0.8em;
 }
 
@@ -48,7 +53,7 @@
   padding: 10px 0;
   margin-left: -20px;
   margin-right: -20px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .follow > div {
@@ -59,26 +64,26 @@
 }
 
 .follow-value {
+  font-size: smaller;
   font-weight: bold;
 }
 
 .garis-tengah {
   border-left: 1px solid #bbb;
-  height: 40px;
+  height: 30px;
   /* align-self: center; */
 }
 
 .follow-label {
   color: #bbb;
+  font-size: smaller;
 }
 
 .profile-btn button {
   background-color: hsl(211, 100%, 50%, 0%);
   color: #61aeff;
-  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  padding-top: 170px;
 }

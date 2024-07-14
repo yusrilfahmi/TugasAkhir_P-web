@@ -1,9 +1,10 @@
 .post{
     background-color: rgb(70, 70, 70); 
     border-radius: 8px;
-    width: 100%;
+    width: 99%;
     height:max-content;
     margin-bottom: 10px;
+    margin-right: 5px;
 }
 .fotouserpost{
     border-style:solid;
@@ -65,7 +66,7 @@
 }
 .post .bawah .icon{
     float: left;
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 .post .like{
     align-content: center;
@@ -79,7 +80,7 @@
     float: left;
 }
 
-.buttonbawah{
+.buttonbawah{   
     margin-top: 2%;
     margin-left: 88px;
     margin-right: 50px;
@@ -89,7 +90,7 @@
     padding-top: 1px;
     justify-content: center;
     margin-right: 10px;
-    padding-left: 10px;
+    padding-left: 20px;
     float: left;
     width: 15px;
     height: 15px;
@@ -100,9 +101,11 @@
     border: 0;
     justify-content: center;
     text-align: left;
-    width: 75px;
+    width: 90px;
     height: 25px;
-    margin-right: 60%;
+    margin-top: 15px;
+    margin-left: -7px;
+    margin-right: 55%;
     cursor: pointer;
 }
 .commentbtn{
@@ -111,13 +114,30 @@
     border: 0;
     justify-content: center;
     text-align: left;
-    width: 110px;
+    width: 120px;
     height: 25px;
     cursor: pointer;
 }
 .image{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 .panetambahan {
-    height: 20px;
+    height: 10px;
+}
+.icons{
+    color: white;
+}
+.iconlike{
+    margin-top: -2px;
+    margin-right: 6px;
+    margin-left: 7px;
+    border-radius: 50%;
+    float: left;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 81, 255);
 }

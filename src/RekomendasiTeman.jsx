@@ -6,7 +6,7 @@ import { useState } from 'react';
 import ListRekomendasiTeman from './ListRekomendasiTeman'
 
 function RekomendasiTeman() {
-
+    const navigate = useNavigate()
 
     return (
         <div className={RekomendasiTemanCSS.wrapper}>
@@ -32,7 +32,7 @@ function RekomendasiTeman() {
             </ListRekomendasiTeman>
 
 
-            <button className={RekomendasiTemanCSS.btn}>Next</button>
+            <button onClick={() => navigate('/Home')} className={RekomendasiTemanCSS.btn}>Next</button>
         </div>
     )
 }
