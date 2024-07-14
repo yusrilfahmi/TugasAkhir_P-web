@@ -1,15 +1,16 @@
 import "./ProfileSide.css";
-import { RxAvatar } from "react-icons/rx";
+import { useNavigate } from "react-router-dom";
+
+import foto from './assets/pp.jpg';
 
 const ProfileSide = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className="profile-card">
       <div className="profile-header">
-        <RxAvatar
-          src="https://yt3.googleusercontent.com/70AAs4G19wnArE_Z99J_9kg678xihVgx72ti9ybFUeWomeM45lvr0j5ecR_4qSLWCcC98Rup=s160-c-k-c0x00ffffff-no-rj"
-          className="avatar"
-          size={60}
-        />
+        <img src={foto} className="foto"/>
         <p className="username">Orang Ganteng</p>
         <p className="handle">@Cogan</p>
       </div>
@@ -28,7 +29,7 @@ const ProfileSide = () => {
         </div>
       </div>
       <div className="profile-btn">
-        <button>MyProfile</button>
+        <button onClick={() => navigate('/EditProfile')} >MyProfile</button>
       </div>
     </div>
   );

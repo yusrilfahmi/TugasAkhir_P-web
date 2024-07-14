@@ -9,8 +9,13 @@ import ListTambahTemanHome from './ListTambahTemanHome.jsx';
 import ProfileSide from './ProfileSide.jsx';
 import StatusPopup from './StatusPopup';
 import { useState } from 'react';
+import back from "./assets/back.jpg"
+import { useNavigate } from 'react-router-dom';
+
 
 function Home(){
+
+    const navigate = useNavigate()
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const openPopup = () => {
@@ -27,10 +32,10 @@ function Home(){
         <div className ={HomeCSS.navbar}>
             <div className ={HomeCSS.kanan}>
                 <button className={HomeCSS.logoutbtn}>
-                    Log out
-                </button>
-                <button className={HomeCSS.homebtn}>
                     Home
+                </button>
+                <button onClick={() => navigate('/')} className={HomeCSS.homebtn}>
+                    Logout
                 </button>
             </div>
             <div className ={HomeCSS.kiri}>
@@ -42,34 +47,34 @@ function Home(){
         <div className ={HomeCSS.home}>
             <div className={HomeCSS.kiri}>
                 <div className={HomeCSS.profile}>
-
+                <div className={HomeCSS.background}>
+                    <img src={back} alt="back" />
+                </div>
                     <ProfileSide>
-
                     </ProfileSide>
-
                 </div>
                 <div className={HomeCSS.h}>
                     <h1 className={HomeCSS.rekomendasiTeman}>Rekomendasi Teman</h1>
                     
                     {/* Rekomendasi Teman */}
+                    <div className={HomeCSS.rekom}>  
+                        <ListTambahTemanHome trigger={true}>
 
-                    <ListTambahTemanHome trigger={true}>
+                        </ListTambahTemanHome>
 
-                    </ListTambahTemanHome>
+                        <ListTambahTemanHome trigger={true}>
 
-                    <ListTambahTemanHome trigger={true}>
+                        </ListTambahTemanHome>
 
-                    </ListTambahTemanHome>
+                        <ListTambahTemanHome trigger={true}>
 
-                    <ListTambahTemanHome trigger={true}>
+                        </ListTambahTemanHome>
 
-                    </ListTambahTemanHome>
+                        <ListTambahTemanHome trigger={true}>
 
-                    <ListTambahTemanHome trigger={true}>
-
-                    </ListTambahTemanHome>
-
-                    <button className={HomeCSS.showMoreRekomendasiTeman}>Show More</button>  
+                        </ListTambahTemanHome>
+                    </div> 
+                    <button onClick={() => navigate('/RekomendasiTeman')} className={HomeCSS.showMoreRekomendasiTeman}>Show More</button>  
                 </div>
             </div>
             <div className={HomeCSS.tengah}>

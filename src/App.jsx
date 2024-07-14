@@ -32,8 +32,8 @@ function App() {
           <Route path='/Postingan' element={<Postingan />}></Route>
         </Routes>
       </Router>
-{/* 
-        <Home/> */}
+
+        {/* <Home/> */}
 
     </>
 

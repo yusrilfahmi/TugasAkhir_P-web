@@ -14,13 +14,15 @@ function Postingan(){
             <button className={PostCSS.morebtn}><IoIosMore></IoIosMore></button>
         </div>
         <div className={PostCSS.isi}>
+            lorem20
             <div className={PostCSS.image}>
             <img src={foto} alt="foto" className={PostCSS.foto}/>
             </div>
-            lorem20</div>
+            </div>
         <div className={PostCSS.bawah}>
+            <div className={PostCSS.iconlike}><FaHeart className={PostCSS.icons}></FaHeart></div>
             <div className={PostCSS.like}>
-                <FaHeart className={PostCSS.icon}></FaHeart>4542
+                4542
             </div>
             <div className={PostCSS.komen}>
                 <div className={PostCSS.comment}>1313</div>

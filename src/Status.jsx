@@ -7,8 +7,8 @@ function Status() {
         <div className= {StatusCSS.foto}> 
         <img src={foto} alt="foto" /></div>
         <div className={StatusCSS.Content}>
-            <div className={StatusCSS.Text}>
-                Emang Fefek Tugas IMK Nich kata dosennya dicek di cek di google lens kalo ada yang sama dikasih nilai nol
+            <div className={StatusCSS.texttengah}>
+                <textarea contentEditable="true" type="text" placeholder='Ada apa hari ini?' className={StatusCSS.Text}/>
             </div>
         </div>
     </div>
